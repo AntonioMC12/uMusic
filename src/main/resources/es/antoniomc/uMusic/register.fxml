@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.antoniomc.uMusic.SingupController">
+   <children>
+      <TextField fx:id="txtUsuario" layoutX="26.0" layoutY="90.0" />
+      <TextField fx:id="txtCorreo" layoutX="216.0" layoutY="90.0" />
+      <PasswordField fx:id="txtPassword" layoutX="26.0" layoutY="140.0" />
+      <PasswordField fx:id="txtPassword2" layoutX="216.0" layoutY="140.0" />
+      <Button fx:id="btnFoto" layoutX="115.0" layoutY="178.0" mnemonicParsing="false" onAction="#setFoto" prefHeight="25.0" prefWidth="155.0" text="Seleccionar Foto" />
+      <Button fx:id="btnSingup" layoutX="155.0" layoutY="374.0" mnemonicParsing="false" onAction="#Singup" text="Registrarse" />
+      <Button fx:id="btnLogin" layoutX="232.0" layoutY="408.0" mnemonicParsing="false" onAction="#GoLogin" text="Iniciar Sesión" />
+      <Text layoutX="26.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" />
+      <Text layoutX="26.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" />
+      <Text layoutX="115.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Ya estás registrado?" />
+      <ImageView fitHeight="112.0" fitWidth="155.0" layoutX="115.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@media/logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="216.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo Electronico" />
+      <Text layoutX="215.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repetir Contraseña" />
+      <BorderPane layoutX="118.0" layoutY="223.0" prefHeight="134.0" prefWidth="149.0" style="-fx-border-radius: 25; -fx-border-color: black;">
+         <center>
+            <ImageView fx:id="imgFoto" fitHeight="128.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@media/avatar-de-hombre.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+   </children>
+</Pane>

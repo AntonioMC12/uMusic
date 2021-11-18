@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="154.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.antoniomc.uMusic.crearModalController">
+   <children>
+      <Text layoutX="128.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿QUÉ DESEA CREAR?" textAlignment="CENTER" wrappingWidth="234.958984375" AnchorPane.bottomAnchor="266.0" AnchorPane.leftAnchor="128.0" AnchorPane.rightAnchor="128.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnGenero" layoutX="14.0" layoutY="88.0" mnemonicParsing="false" onAction="#createGenero" prefHeight="42.0" prefWidth="74.0" text="GÉNERO" AnchorPane.bottomAnchor="23.6" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="88.0" />
+      <Button fx:id="btnArtista" layoutX="106.0" layoutY="88.0" mnemonicParsing="false" onAction="#createArtista" prefHeight="42.0" prefWidth="74.0" text="ARTISTA" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="308.6" />
+      <Button fx:id="btnCancion" layoutX="207.0" layoutY="88.0" mnemonicParsing="false" onAction="#createCancion" prefHeight="42.0" prefWidth="74.0" text="CANCIÓN" AnchorPane.bottomAnchor="23.599999999999994" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="207.60000000000002" AnchorPane.topAnchor="88.0" />
+      <Button fx:id="btnDisco" layoutX="309.0" layoutY="88.0" mnemonicParsing="false" onAction="#createDisco" prefHeight="42.0" prefWidth="74.0" text="DISCO" AnchorPane.bottomAnchor="23.599999999999994" AnchorPane.leftAnchor="309.0" AnchorPane.rightAnchor="105.60000000000002" AnchorPane.topAnchor="88.0" />
+      <Button fx:id="btnPlaylist" layoutX="400.0" layoutY="88.0" mnemonicParsing="false" onAction="#createPlaylist" prefHeight="42.0" prefWidth="74.0" text="PLAYLIST" AnchorPane.bottomAnchor="23.599999999999994" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="14.600000000000023" AnchorPane.topAnchor="88.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.antoniomc.uMusic.buscarListaModalController">
+   <left>
+      <TableView fx:id="tabPlaylist" onMouseClicked="#setCanciones" prefHeight="514.0" prefWidth="169.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colPlaylist" maxWidth="168.7999877691269" prefWidth="168.7999877691269" resizable="false" text="PlayList" />
+        </columns>
+      </TableView>
+   </left>
+   <center>
+      <TableView fx:id="tabCanciones" onMouseClicked="#btnRemoveState" prefHeight="514.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="188.00005495548248" text="Canción" />
+          <TableColumn fx:id="colGenero" prefWidth="128.800048828125" text="Género" />
+            <TableColumn fx:id="colDisco" prefWidth="118.39993286132812" text="Disco" />
+            <TableColumn fx:id="colDuracion" prefWidth="199.20004272460938" text="Duración" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button fx:id="btnSuscribirse" mnemonicParsing="false" onAction="#suscribirse" text="Suscribirse" />
+            <Button fx:id="btnRemove" mnemonicParsing="false" onAction="#eliminarCancion" text="Eliminar Cancion" />
+        </buttons>
+      </ButtonBar>
+   </bottom>
+</BorderPane>

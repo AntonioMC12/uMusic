@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="256.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.antoniomc.uMusic.editarArtistaModalController">
+   <children>
+      <Text layoutX="57.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EDITAR ARTISTA" textAlignment="CENTER" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="56.5732421875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtNombre" layoutX="54.0" layoutY="80.0" promptText="Nombre" />
+      <TextField fx:id="txtNacionalidad" layoutX="55.0" layoutY="142.0" promptText="Nacionalidad" />
+      <Pane layoutX="58.0" layoutY="221.0" prefHeight="125.0" prefWidth="142.0" style="-fx-border-color: BLACK; -fx-border-radius: 15;" AnchorPane.bottomAnchor="53.39999999999998" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="55.599999999999994">
+         <children>
+            <ImageView fx:id="imgFoto" fitHeight="109.0" fitWidth="123.0" layoutX="10.0" layoutY="8.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../../../Desktop/Cosas_Antonio/resources/dibujo_cobete.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="btnAddImg" layoutX="83.0" layoutY="187.0" mnemonicParsing="false" onAction="#setFoto" text="Añadir imagen" />
+      <Text layoutX="55.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
+      <Text layoutX="55.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nacionalidad" />
+      <Button fx:id="btnGuardar" layoutX="62.0" layoutY="359.0" mnemonicParsing="false" onAction="#guardarArtista" prefHeight="26.0" prefWidth="136.0" text="GUARDAR" />
+      <ComboBox fx:id="cbArtistas" layoutX="55.0" layoutY="38.0" onAction="#setCampos" prefWidth="150.0" promptText="Artista" />
+   </children>
+</AnchorPane>

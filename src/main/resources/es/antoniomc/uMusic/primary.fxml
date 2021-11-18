@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.antoniomc.uMusic.PrimaryController">
+   <top>
+      <MenuBar prefHeight="0.0" prefWidth="578.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Buscar">
+            <items>
+                  <MenuItem fx:id="menuArtistas" mnemonicParsing="false" onAction="#menuArtista" text="Artistas" />
+                  <MenuItem fx:id="menuCanciones" mnemonicParsing="false" onAction="#menuCancion" text="Canciones" />
+                  <MenuItem fx:id="menuDiscos" mnemonicParsing="false" onAction="#menuDisco" text="Discos" />
+              <MenuItem fx:id="menuPlaylist" mnemonicParsing="false" onAction="#menuListas" text="PlayList" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <right>
+      <Pane prefHeight="374.0" prefWidth="179.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="21.0" layoutY="160.0" minHeight="-Infinity" prefHeight="20.0" prefWidth="150.0">
+               <children>
+                  <Text fx:id="txtUsuario" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Usuario" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="30.0" layoutY="14.0" prefHeight="121.0" prefWidth="120.0" style="-fx-border-color: black; -fx-border-radius: 15;">
+               <children>
+                  <ImageView fx:id="imgFoto" fitHeight="119.0" fitWidth="119.0" layoutX="15.0" layoutY="15.0" pickOnBounds="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <image>
+                        <Image url="@../../../../../../../../Downloads/avatar-de-hombre.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnCrear" layoutX="35.0" layoutY="199.0" mnemonicParsing="false" onAction="#crearButton" prefHeight="35.0" prefWidth="121.0" text="CREAR" />
+            <Button fx:id="btnEditar" layoutX="35.0" layoutY="251.0" mnemonicParsing="false" onAction="#editarButton" prefHeight="35.0" prefWidth="121.0" text="EDITAR" />
+            <Button fx:id="btnBorrar" layoutX="35.0" layoutY="306.0" mnemonicParsing="false" onAction="#borrarButton" prefHeight="35.0" prefWidth="121.0" text="BORRAR" />
+            <Button fx:id="btnSalir" layoutX="35.0" layoutY="453.0" mnemonicParsing="false" onAction="#GoToLogin" prefHeight="35.0" prefWidth="121.0" text="SALIR" />
+            <Button fx:id="btnDesuscribirse" layoutX="53.0" layoutY="389.0" mnemonicParsing="false" onAction="#desuscribirse" text="Desuscribirse" />
+         </children>
+      </Pane>
+   </right>
+   <left>
+      <TableView fx:id="tabPlaylist" onMouseClicked="#setCanciones" prefHeight="514.0" prefWidth="169.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colPlaylist" maxWidth="168.7999877691269" prefWidth="168.7999877691269" resizable="false" text="Tus PlayList" />
+        </columns>
+      </TableView>
+   </left>
+   <center>
+      <TableView fx:id="tabCanciones" prefHeight="514.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="113.6" text="Canción" />
+          <TableColumn fx:id="colGenero" prefWidth="113.6" text="Género" />
+            <TableColumn fx:id="colDisco" prefWidth="113.6" text="Disco" />
+            <TableColumn fx:id="colDuracion" prefWidth="113.6" text="Duración" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

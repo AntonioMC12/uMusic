@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.antoniomc.uMusic.buscarCancionModalController">
+   <center>
+      <TableView fx:id="tabCanciones" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="colNombre" prefWidth="171.20001220703125" text="Nombre" />
+          <TableColumn fx:id="colGenero" prefWidth="176.79998779296875" text="Género" />
+          <TableColumn fx:id="colDisco" prefWidth="163.20001220703125" text="Disco" />
+            <TableColumn fx:id="colDuracion" prefWidth="94.40008544921875" text="Duración" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+            <ComboBox fx:id="cbPlaylist" prefWidth="150.0" promptText="Seleccionar PlayList" />
+          <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#btnAdd" text="Añadir " />
+        </buttons>
+      </ButtonBar>
+   </bottom>
+</BorderPane>

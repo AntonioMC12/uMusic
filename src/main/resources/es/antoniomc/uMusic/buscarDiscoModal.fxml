@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.antoniomc.uMusic.buscarDiscoModalController">
+   <center>
+      <TableView fx:id="tabDiscos" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="colNombre" prefWidth="144.79998779296875" text="Nombre" />
+          <TableColumn fx:id="colFoto" prefWidth="183.2000732421875" text="Foto" />
+          <TableColumn fx:id="colFecha" prefWidth="148.800048828125" text="Fecha" />
+            <TableColumn fx:id="colArtista" prefWidth="134.4000244140625" text="Artista" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
